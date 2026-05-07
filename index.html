@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformando o Cuidado</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+        text-align: center;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+        color: #cbd5f5;
+        margin-bottom: 30px;
+    }
+
+    .split {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex: 1;
+        padding: 30px;
+        min-width: 280px;
+    }
+
+    .before {
+        background: #7f1d1d;
+    }
+
+    .after {
+        background: #065f46;
+    }
+
+    .box h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .box p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    .center {
+        margin: 40px 0;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    .sequence {
+        font-size: 1.4em;
+        margin: 40px 0;
+    }
+
+    .sequence div {
+        margin: 15px 0;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease;
+    }
+
+    .visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .impact {
+        font-size: 1.4em;
+        margin-top: 50px;
+        color: #a5f3fc;
+    }
+
+    .btn {
+        margin-top: 40px;
+        padding: 15px 25px;
+        background: #22c55e;
+        border: none;
+        font-size: 1.1em;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .btn:hover {
+        background: #16a34a;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Antes era sorte.<br>Hoje é estratégia.</h1>
+    <div class="subtitle">Organizar o território transforma o cuidado</div>
+
+    <div class="split">
+        <div class="box before">
+            <h2>ANTES</h2>
+            <p>Território desorganizado<br>
+            Equipes sobrepostas<br>
+            População invisível</p>
+        </div>
+
+        <div class="box after">
+            <h2>DEPOIS</h2>
+            <p>Território definido<br>
+            Equipes equilibradas<br>
+            Cuidado garantido</p>
+        </div>
+    </div>
+
+ <button class="btn" onclick="animar();this.innerHTML='Não é um sistema. <br>É um modelo de governança testado em território real.'">Ver transformação</button>
+
+    <div class="sequence">
+        <div>Distribuímos o território.</div>
+        <div>⬇</div>
+		<div>		<iframe src="https://www.google.com/maps/d/embed?mid=1ky2MxMtINVIBlusB7jAXRbIyk3fDppQ&hl=pt-BR&ehbc=2E312F" width="100%" height="480"></iframe>		</div>
+				
+        <div>Distribuímos as equipes.</div>
+        <div>⬇</div>
+		<div>		<iframe src="https://www.google.com/maps/d/embed?mid=16fmvKLqYx9dQ7GLffCmr80mK1w67Ek8&ehbc=2E312F" width="100%" height="480"></iframe>		</div>
+        <div>Distribuímos o cuidado.</div>
+   
+     
+   <div><a href="https://www.youtube.com/watch?v=zpQ-dTPk3Yo" target="_new" style="color:wheat">Conheça</a></div>
+   
+
+    
+	
+	<div class="center">
+        Quando você organiza o território…<br>
+        você transforma o cuidado.
+    </div>
+
+   </div>
+
+   
+
+
+
+    <div class="impact">
+        Gestão não é sobre controle.<br>
+        É sobre justiça no acesso à saúde.
+    </div>
+
+</div>
+
+<script>
+function animar() {
+    const itens = document.querySelectorAll('.sequence div');
+    itens.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('visible');
+        }, index * 500);
+    });
+}
+</script>
+
+</body>
+</html>
